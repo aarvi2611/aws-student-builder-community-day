@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="axientaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="50%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <linearGradient id="axientaAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#818CF8" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#4F46E5" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Rounded Background Container -->
+  <rect width="500" height="500" rx="110" fill="url(#axientaGrad)" />
+  
+  <!-- Outer subtle tech rings -->
+  <circle cx="250" cy="250" r="190" fill="none" stroke="white" stroke-opacity="0.1" stroke-width="4" stroke-dasharray="16 12" />
+  <circle cx="250" cy="250" r="160" fill="none" stroke="white" stroke-opacity="0.15" stroke-width="2" />
+
+  <!-- Modern Dynamic "A" & Tech Surge -->
+  <g filter="url(#glow)">
+    <!-- Left Stem of A -->
+    <path d="M140 370 L225 130 C233 108 267 108 275 130 L360 370 C368 392 342 410 322 396 L290 374 C280 367 274 355 270 342 L250 280 L195 280 L176 342 C172 355 165 367 154 375 L124 397 C104 411 132 391 140 370 Z" fill="#FFFFFF" />
+    
+    <!-- Energy Spark / Bolt in the Crossbar of A -->
+    <path d="M230 200 L285 200 L242 270 L285 270 L205 375 L228 290 L185 290 Z" fill="url(#axientaAccent)" />
+
+    <!-- Cap Sparkle -->
+    <circle cx="250" cy="118" r="10" fill="#38BDF8" />
+  </g>
+</svg>

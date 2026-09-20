@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19" />
+      <stop offset="60%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1E1B4B" />
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#heroBg)" />
+
+  <!-- Grid lines -->
+  <g stroke="#6366F1" stroke-opacity="0.07" stroke-width="1.5">
+    <line x1="0" y1="75" x2="800" y2="75" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="225" x2="800" y2="225" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="375" x2="800" y2="375" />
+    <line x1="100" y1="0" x2="100" y2="450" />
+    <line x1="200" y1="0" x2="200" y2="450" />
+    <line x1="300" y1="0" x2="300" y2="450" />
+    <line x1="400" y1="0" x2="400" y2="450" />
+    <line x1="500" y1="0" x2="500" y2="450" />
+    <line x1="600" y1="0" x2="600" y2="450" />
+    <line x1="700" y1="0" x2="700" y2="450" />
+  </g>
+
+  <!-- Glowing Ambiance -->
+  <circle cx="580" cy="180" r="180" fill="#4F46E5" fill-opacity="0.3" filter="blur(70px)" />
+  <circle cx="240" cy="300" r="160" fill="#0284C7" fill-opacity="0.25" filter="blur(65px)" />
+
+  <!-- Main IDE & Player Window -->
+  <g transform="translate(60, 45)" filter="url(#cardShadow)">
+    <rect width="680" height="360" rx="20" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+    
+    <!-- Window Header -->
+    <g transform="translate(24, 20)">
+      <circle cx="0" cy="0" r="6" fill="#EF4444" />
+      <circle cx="18" cy="0" r="6" fill="#F59E0B" />
+      <circle cx="36" cy="0" r="6" fill="#10B981" />
+      <rect x="70" y="-12" width="260" height="24" rx="6" fill="#1E293B" />
+      <text x="85" y="4" font-family="monospace" font-size="11" fill="#94A3B8">axienta-edtech.com/learn/python</text>
+    </g>
+
+    <!-- Sidebar in Mockup -->
+    <g transform="translate(20, 50)">
+      <rect width="180" height="280" rx="12" fill="#1E293B" stroke="#334155" stroke-opacity="0.5" />
+      <text x="16" y="28" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#F8FAFC">Curriculum (15)</text>
+      
+      <rect x="12" y="42" width="156" height="32" rx="6" fill="#4F46E5" fill-opacity="0.2" stroke="#4F46E5" stroke-opacity="0.4" />
+      <circle cx="26" cy="58" r="4" fill="#38BDF8" />
+      <text x="36" y="62" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">1. Intro to Python</text>
+
+      <rect x="12" y="80" width="156" height="32" rx="6" fill="#0F172A" />
+      <text x="36" y="100" font-family="system-ui, sans-serif" font-size="11" fill="#94A3B8">2. Data Types</text>
+
+      <rect x="12" y="118" width="156" height="32" rx="6" fill="#0F172A" />
+      <text x="36" y="138" font-family="system-ui, sans-serif" font-size="11" fill="#94A3B8">3. Loops &amp; Logic</text>
+
+      <rect x="12" y="156" width="156" height="32" rx="6" fill="#0F172A" />
+      <text x="36" y="176" font-family="system-ui, sans-serif" font-size="11" fill="#94A3B8">4. OOP Masterclass</text>
+
+      <rect x="12" y="194" width="156" height="32" rx="6" fill="#0F172A" />
+      <text x="36" y="214" font-family="system-ui, sans-serif" font-size="11" fill="#94A3B8">5. Placement PYQs</text>
+    </g>
+
+    <!-- Main Workspace in Mockup -->
+    <g transform="translate(215, 50)">
+      <rect width="445" height="280" rx="12" fill="#020617" stroke="#1E293B" />
+      
+      <!-- Code Title Bar -->
+      <rect width="445" height="34" rx="12" fill="#0F172A" />
+      <text x="16" y="22" font-family="monospace" font-size="12" fill="#38BDF8">main.py • Python 3.12</text>
+      <rect x="360" y="8" width="70" height="20" rx="4" fill="#10B981" fill-opacity="0.2" />
+      <text x="372" y="22" font-family="system-ui, sans-serif" font-weight="700" font-size="10" fill="#10B981">▶ RUNNING</text>
+
+      <!-- Code lines -->
+      <g transform="translate(16, 58)" font-family="monospace" font-size="12">
+        <text y="0" fill="#64748B">1 |  <tspan fill="#F43F5E">from</tspan> axienta <tspan fill="#F43F5E">import</tspan> Student, Course</text>
+        <text y="22" fill="#64748B">2 |  </text>
+        <text y="44" fill="#64748B">3 |  student = Student(name=<tspan fill="#34D399">"You"</tspan>)</text>
+        <text y="66" fill="#64748B">4 |  course = Course(title=<tspan fill="#34D399">"Full Stack AI &amp; Python"</tspan>)</text>
+        <text y="88" fill="#64748B">5 |  </text>
+        <text y="110" fill="#64748B">6 |  <tspan fill="#38BDF8">@student.practice_daily</tspan></text>
+        <text y="132" fill="#64748B">7 |  <tspan fill="#F43F5E">def</tspan> <tspan fill="#818CF8">master_skills</tspan>():</text>
+        <text y="154" fill="#64748B">8 |      <tspan fill="#F43F5E">return</tspan> student.achieve(streak=<tspan fill="#FBBF24">30</tspan>, certified=<tspan fill="#F43F5E">True</tspan>)</text>
+      </g>
+
+      <!-- Output terminal -->
+      <rect x="12" y="220" width="420" height="48" rx="8" fill="#0B0F17" stroke="#1E293B" />
+      <text x="24" y="242" font-family="monospace" font-size="11" fill="#10B981">✓ All 12 Test Cases Passed! (+50 XP)</text>
+      <text x="24" y="258" font-family="monospace" font-size="10" fill="#64748B">Streak: 12 Days 🔥 | Accuracy: 94%</text>
+    </g>
+  </g>
+
+  <!-- Floating Achievement Badge -->
+  <g transform="translate(480, 310)" filter="url(#cardShadow)">
+    <rect width="260" height="74" rx="16" fill="#1E1B4B" stroke="#6366F1" stroke-width="2" />
+    <circle cx="38" cy="37" r="22" fill="url(#primaryGrad)" />
+    <text x="28" y="44" font-size="20">🏆</text>
+    <text x="70" y="32" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#FFFFFF">ISO Certified Track</text>
+    <text x="70" y="52" font-family="system-ui, sans-serif" font-size="11" fill="#A5B4FC">Verified Digital Credentials</text>
+  </g>
+</svg>

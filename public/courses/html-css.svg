@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="htmlBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#1E1E2E" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+    <linearGradient id="htmlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F97316" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+    <linearGradient id="cssGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <filter id="shadowWeb" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#htmlBg)" />
+  
+  <!-- Subtle Web Grid -->
+  <g stroke="#F97316" stroke-opacity="0.08" stroke-width="1.5">
+    <line x1="0" y1="90" x2="800" y2="90" />
+    <line x1="0" y1="180" x2="800" y2="180" />
+    <line x1="0" y1="270" x2="800" y2="270" />
+    <line x1="0" y1="360" x2="800" y2="360" />
+    <line x1="160" y1="0" x2="160" y2="450" />
+    <line x1="320" y1="0" x2="320" y2="450" />
+    <line x1="480" y1="0" x2="480" y2="450" />
+    <line x1="640" y1="0" x2="640" y2="450" />
+  </g>
+
+  <!-- Right Graphic: Modern Browser & Code Window -->
+  <g transform="translate(470, 90)" filter="url(#shadowWeb)">
+    <!-- Browser Mockup -->
+    <rect width="270" height="260" rx="16" fill="#181825" stroke="#313244" stroke-width="2"/>
+    <circle cx="24" cy="24" r="5" fill="#F38BA8"/>
+    <circle cx="40" cy="24" r="5" fill="#F9E2AF"/>
+    <circle cx="56" cy="24" r="5" fill="#A6E3A1"/>
+    
+    <!-- Code layout simulation -->
+    <rect x="20" y="55" width="230" height="80" rx="8" fill="url(#htmlGrad)" fill-opacity="0.2" stroke="#F97316" stroke-width="1.5"/>
+    <text x="35" y="100" font-family="monospace" font-weight="bold" font-size="20" fill="#F97316">&lt;HTML5 /&gt;</text>
+    
+    <rect x="20" y="150" width="230" height="80" rx="8" fill="url(#cssGrad)" fill-opacity="0.2" stroke="#38BDF8" stroke-width="1.5"/>
+    <text x="35" y="195" font-family="monospace" font-weight="bold" font-size="20" fill="#38BDF8">CSS3 { Grid }</text>
+  </g>
+
+  <!-- Left Content Info -->
+  <g transform="translate(60, 80)">
+    <rect width="160" height="32" rx="16" fill="#F97316" fill-opacity="0.2" stroke="#F97316" stroke-opacity="0.4" />
+    <text x="24" y="21" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#FB923C">WEB DEVELOPMENT</text>
+
+    <text x="0" y="85" font-family="system-ui, sans-serif" font-weight="900" font-size="44" fill="#FFFFFF">HTML5 &amp; CSS3</text>
+    <text x="0" y="130" font-family="system-ui, sans-serif" font-weight="800" font-size="34" fill="#FB923C">Modern Responsive Web</text>
+
+    <g transform="translate(0, 170)">
+      <rect width="130" height="36" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1.5" />
+      <text x="24" y="23" font-family="system-ui, sans-serif" font-weight="600" font-size="14" fill="#E2E8F0">Flexbox &amp; Grid</text>
+
+      <rect x="145" width="130" height="36" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1.5" />
+      <text x="168" y="23" font-family="system-ui, sans-serif" font-weight="600" font-size="14" fill="#E2E8F0">Tailwind CSS</text>
+
+      <rect x="290" width="130" height="36" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1.5" />
+      <text x="310" y="23" font-family="system-ui, sans-serif" font-weight="600" font-size="14" fill="#E2E8F0">Certificate</text>
+    </g>
+
+    <text x="0" y="260" font-family="monospace" font-size="15" fill="#94A3B8">.developer { display: flex; align-items: success; }</text>
+  </g>
+</svg>
